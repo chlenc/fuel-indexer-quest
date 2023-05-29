@@ -1,0 +1,13 @@
+---
+namespace: compolabs
+abi: contract-abi.json
+identifier: hello_world
+fuel_client: ~
+graphql_schema: schema/hello_world.schema.graphql
+module:
+  wasm: target/wasm32-unknown-unknown/release/hello_world.wasm
+metrics: ~
+contract_id: "0x3dd1c6e811fa1eb21e649aca12630e44f6a937c1b33b00fb26e4716230fd7b69"
+start_block: 0
+end_block: ~
+resumable: ~
