@@ -36,6 +36,9 @@ fuel-indexer run --run-migrations --fuel-node-host beta-3.fuel.network --fuel-no
 
 ```shell
 cd ./hello_world
+# You should change `start_block` in your `spark_indexer.manifest.yaml` to current not to wait too long
+# You can find the current block number on the response of the command below:
+# curl -X POST https://beta-3.fuel.network/graphql -d '{"query":"query {blocks(last: 1) { nodes {header {height}}}}"}' -H 'Content-Type: application/json'
 forc index build
 # If you encounter any build errors, try running the following two lines:
 # export AR=/opt/homebrew/opt/llvm/bin/llvm-ar 
